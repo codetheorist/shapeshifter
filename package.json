@@ -21,17 +21,18 @@
   "docs": "https://github.com/codetheorist/shapeshifter#readme",
   "download": "https://github.com/codetheorist/shapeshifter/archive/master.zip",
   "dependencies": {
-    "jquery": ">=1.4",
+    "jquery": ">=1.4"
   },
   "devDependencies": {
     "grunt": "^1.0.1",
+    "grunt-bower": "^0.21.3",
+    "grunt-bower-concat": "^1.0.0",
     "grunt-cli": "^1.2.0",
     "grunt-contrib-concat": "^1.0.1",
     "grunt-contrib-jshint": "^1.0.0",
     "grunt-contrib-qunit": "^1.2.0",
     "grunt-contrib-uglify": "^2.0.0",
     "grunt-contrib-watch": "^1.0.0",
-    "grunt-bower": "^0.21.3",
     "grunt-wiredep": "^3.0.1",
     "load-grunt-tasks": "^3.5.2",
     "time-grunt": "^1.4.0"

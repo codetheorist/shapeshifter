@@ -15,7 +15,7 @@ module.exports = function(grunt) {
         // the files to concatenate
         src: ['src/**/*.js'],
         // the location of the resulting JS file
-        dest: 'dist/<%= pkg.name %>.js'
+        dest: 'dist/js/<%= pkg.name %>.js'
       }
     },
     uglify: {
@@ -25,7 +25,7 @@ module.exports = function(grunt) {
       },
       dist: {
         files: {
-          'dist/<%= pkg.name %>.min.js': ['<%= concat.dist.dest %>']
+          'dist/js/<%= pkg.name %>.min.js': ['<%= concat.dist.dest %>']
         }
       }
     },
@@ -42,6 +42,24 @@ module.exports = function(grunt) {
         }
       }
     },
+    bower_concat: {
+      all: {
+        dest: {
+          'js': 'dist/js/vendor.js',
+          'css': 'dist/css/vendor.css'
+        },
+        exclude: [
+          'jquery',
+          'modernizr'
+        ],
+        dependencies: {
+          'foundation-sites': 'jquery'
+        },
+        bowerOptions: {
+          relative: false
+        }
+      }
+    },
     watch: {
       files: ['<%= jshint.files %>'],
       tasks: ['jshint', 'concat', 'uglify']
@@ -49,9 +67,8 @@ module.exports = function(grunt) {
   });
   // this would be run by typing "grunt test" on the command line
   grunt.registerTask('test', ['jshint', 'qunit']);
-
   // the default task can be run just by typing "grunt" on the command line
-  grunt.registerTask('build', ['jshint', 'concat', 'uglify']);
+  grunt.registerTask('build', ['bower_concat', 'jshint', 'concat', 'uglify']);
   // the default task can be run just by typing "grunt" on the command line
   grunt.registerTask('default', ['jshint', 'concat', 'uglify', 'watch']);
 };
