@@ -9,7 +9,7 @@
     }, options);
 
     var shapeshifter = function(element, i) {
-
+      
     };
 
   };

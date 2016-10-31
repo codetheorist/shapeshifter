@@ -21,7 +21,9 @@
   "docs": "https://github.com/codetheorist/shapeshifter#readme",
   "download": "https://github.com/codetheorist/shapeshifter/archive/master.zip",
   "dependencies": {
-    "jquery": ">=1.4"
+    "jquery": ">=1.4",
+    "load-grunt-tasks": "^3.5.2",
+    "time-grunt": "^1.4.0"
   },
   "devDependencies": {
     "grunt": "^1.0.1",
