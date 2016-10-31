@@ -1,0 +1,9 @@
+{
+  "name": "shapeshifter",
+  "version": "1.0.0",
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "~2.2.0",
+    "foundation-sites": "6.2.4"
+  }
+}
