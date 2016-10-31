@@ -1,0 +1,35 @@
+{
+  "name": "shapeshifter",
+  "version": "1.0.0",
+  "description": "A small plugin for creating canvas-based backgrounds with random speed, random sized scrolling elements.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codetheorist/shapeshifter.git"
+  },
+  "keywords": [
+    "shapeshifter",
+    "canvas",
+    "animation",
+    "jquery"
+  ],
+  "author": "Alex Scott",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/codetheorist/shapeshifter/issues"
+  },
+  "homepage": "https://github.com/codetheorist/shapeshifter#readme",
+  "docs": "https://github.com/codetheorist/shapeshifter#readme",
+  "download": "https://github.com/codetheorist/shapeshifter/archive/master.zip",
+  "dependencies": {
+    "jquery": ">=1.4"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-qunit": "^1.2.0",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}
